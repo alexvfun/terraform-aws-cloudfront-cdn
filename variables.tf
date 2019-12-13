@@ -198,18 +198,18 @@ variable "cached_methods" {
 }
 
 variable "default_ttl" {
-  default     = "60"
-  description = "Default amount of time (in seconds) that an object is in a CloudFront cache"
+#  default     = "60"
+  description = "Default amount of time (in seconds) that an object is in a CloudFront cache if not specified will use origin"
 }
 
 variable "min_ttl" {
-  default     = "0"
-  description = "Minimum amount of time that you want objects to stay in CloudFront caches"
+#  default     = "0"
+  description = "Minimum amount of time that you want objects to stay in CloudFront caches if not specified will use origin"
 }
 
 variable "max_ttl" {
-  default     = "31536000"
-  description = "Maximum amount of time (in seconds) that an object is in a CloudFront cache"
+#  default     = "31536000"
+  description = "Maximum amount of time (in seconds) that an object is in a CloudFront cache if not specified will use origin"
 }
 
 variable "geo_restriction_type" {
